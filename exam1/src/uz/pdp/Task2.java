@@ -22,17 +22,23 @@ public class Task2 {
                    count++;
                 }
             }if (count==1){
-                System.out.println(i);
               tubSonKupaytmasi*=i;
             }
         }
-        if (tubSonKupaytmasi==1){
-            System.out.println("1 bilan siz kiritgan son orasidagi tub sonlar mavjud emas");
+        boolean boll=true;
+        int count=0;
+        while (boll){
+            if (tubSonKupaytmasi>0){
+                if (tubSonKupaytmasi%10==0){
+                    tubSonKupaytmasi=tubSonKupaytmasi%10;
+                    count++;
+                }
+            }
+            else {
+                boll=false;
+            }
         }
-        else {
-            System.out.println("1 bilan siz kiritgan sonlar orasidagi tub sonlar ko`paytmasi: "+tubSonKupaytmasi);
-        }
-
+        System.out.println(count);
     }
 
 }

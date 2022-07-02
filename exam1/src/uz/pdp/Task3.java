@@ -16,7 +16,7 @@ public class Task3 {
 
         String sifrlanganSuz="";
         for (int i = 0; i < suz.length(); i++) {
-            switch (sifrlanganSuz.charAt(i)){
+            switch (suz.charAt(i)){
                 case 'r': sifrlanganSuz+="s"; break;
                 case 'o': sifrlanganSuz+="l"; break;
                 case 'b': sifrlanganSuz+="c"; break;
