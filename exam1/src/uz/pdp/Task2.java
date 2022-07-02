@@ -38,7 +38,7 @@ public class Task2 {
                 boll=false;
             }
         }
-        System.out.println(count);
+        System.out.println("Natija: "+count);
     }
 
 }
